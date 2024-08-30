@@ -1,10 +1,11 @@
 import React from 'react'
+import Main from '../components/section/Main'
 
 function Website() {
   return (
-    <div>
+    <Main>
       Website
-    </div>
+    </Main>
   )
 }
 
