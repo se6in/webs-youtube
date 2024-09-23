@@ -13,17 +13,18 @@ const Developer = () => {
         }, 300);
     }, []);
 
-    const developerPageClass = loading ? 'isLoading' : 'isLoaded';
+    const developoerPageClass = loading ? 'isLoading' : 'isLoaded';
+
     return (
         <Main 
             title = "추천 개발자"
             description="오늘의 추천 개발자 유튜버입니다.">
             
-            <section id='developerPage' className={developerPageClass}>
-                <h2>🥰 오늘의 추천 개발자입니다.</h2>
-                <div className="developer__inner">
+            <section id='developerPage' className={developoerPageClass}>
+                <h2>😪 추천 개발자를 소개합니다.</h2>
+                <div className='developer__inner'>
                     {developerText.map((developer, key) => (
-                        <div className="developer" key={key}>
+                        <div className='developer' key={key}>
                             <div className="developer__img play__icon">
                                 <Link to={`/channel/${developer.channelId}`}>
                                     <img src={developer.img} alt={developer.name} />
